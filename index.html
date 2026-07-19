@@ -1375,7 +1375,7 @@ function toolLabel(key){ for (var i=0;i<TOOLS.length;i++){ if (TOOLS[i][0]===key
 function viewCenter(){ return { x: state.vb.x+state.vb.w/2, y: state.vb.y+state.vb.h/2 }; }
 
 /* ---- Mini floating bar ---- */
-const MINI = [["select","&#10530;"],["pen","&#9998;"],["segment","/"],["text","T"],["Delete","&#128686;"]];
+const MINI = [["select","&#10530;"],["pen","&#9998;"],["segment","/"],["Delete","&#128686;"]];
 MINI.forEach(function(pair){
   const key=pair[0], icon=pair[1];
   const b = el("button","mbtn",icon); b.dataset.tool=key;
